@@ -44,7 +44,7 @@ app.use(
   })
 );
 
-app.options("*", cors());
+app.options("/*", cors());
 
 // 2. Body Parser: Convert incoming JSON requests to JavaScript objects
 //    10mb limit to handle large resume text and interview data
